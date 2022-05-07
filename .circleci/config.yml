@@ -34,4 +34,4 @@ workflows:
     jobs:
       - checkout
       - codecov/upload
-        file: frontend/coverage/clover.xml
+        file: "frontend/coverage/clover.xml"
