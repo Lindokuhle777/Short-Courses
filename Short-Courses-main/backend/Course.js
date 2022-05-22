@@ -19,11 +19,11 @@ function Create_New_CRS(id, nm, des, user, pic0, pic1) {
 
   client.query(data, [user, des, id, nm, pic0, pic1], (err, results) => {
     if (err) {
-      // couerse is not created
+      // course is not created
       throw err;
     } else {
       console.log("1 record inserted" + results);
-      // couerse is created
+      // course is created
     }
   });
 }
@@ -92,7 +92,6 @@ function Creator_Course(user_id) {
         if (!err) {
           console.log(result.rows);
           res.send(result.rows);
-
         } else {
           console.log(err.message);
           //some error occured
@@ -157,7 +156,6 @@ var crs_description =
 var name = "Full Stack";
 var image0 = "full1.jpeg";
 var image1 = "full2.jpeg";
-
 
 All_Courses();
 User_Course(user_id);
